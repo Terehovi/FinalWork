@@ -28,3 +28,18 @@ void AddTheNecessaryElements(string[] start, string[] res)
         }
     }
 }
+void PrintArray(string[] res)
+{   if (res.Length == 0) Console.Write("[]");
+    else
+    {
+        for (int k = 0; k < res.Length; k++)
+        {
+            Console.Write($"{res[k]} ");
+        }
+    }
+}
+
+string[] startArray = {"hat ", "100 ", "45", "2756"};
+string[] resultArray = GenrateResultArray(startArray);
+AddTheNecessaryElements(startArray, resultArray);
+PrintArray(resultArray);
